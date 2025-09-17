@@ -8,6 +8,7 @@ import Landing from "./pages/Landing";
 import Upload from "./pages/Upload";
 import Status from "./pages/Status";
 import Settings from "./pages/Settings";
+import SignatureDemo from "./pages/SignatureDemo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/upload" element={<Upload />} />
             <Route path="/status" element={<Status />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/signature-demo" element={<SignatureDemo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

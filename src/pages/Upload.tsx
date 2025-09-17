@@ -72,7 +72,7 @@ const Upload = () => {
     } else if (endpoint === "/api/signature") {
       return {
         signatureId: `sig_${Date.now()}`,
-        signatureUrl: `https://sandbox.setu.co/sign/${Date.now()}`,
+        signatureUrl: `${window.location.origin}/signature-demo?id=sig_${Date.now()}&doc=${data?.name || 'document.pdf'}`,
         status: "pending"
       };
     }
